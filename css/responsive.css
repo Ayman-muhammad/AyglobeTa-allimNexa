@@ -1,0 +1,276 @@
+/* Responsive Styles for Wezo Campus Hub */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.75rem;
+    }
+    
+    .display-6 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .btn-lg {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .feature-icon {
+        padding: 15px;
+    }
+    
+    .system-icon {
+        padding: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .display-4 {
+        font-size: 3rem;
+    }
+    
+    .display-5 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .display-4 {
+        font-size: 3.5rem;
+    }
+    
+    .display-5 {
+        font-size: 3rem;
+    }
+}
+
+/* Navigation Responsiveness */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding: 1rem 0;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+    }
+    
+    .dropdown-menu {
+        border: none;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+}
+
+/* Card Deck Responsiveness */
+@media (max-width: 767.98px) {
+    .card-deck {
+        display: block;
+    }
+    
+    .card-deck .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Table Responsiveness */
+@media (max-width: 767.98px) {
+    .table {
+        font-size: 0.875rem;
+    }
+    
+    .table th,
+    .table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Form Responsiveness */
+@media (max-width: 767.98px) {
+    .form-row {
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+    
+    .form-row > .col,
+    .form-row > [class*="col-"] {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+/* Button Group Responsiveness */
+@media (max-width: 575.98px) {
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .btn-group .btn {
+        margin-bottom: 0.25rem;
+        border-radius: 0.25rem;
+    }
+}
+
+/* Modal Responsiveness */
+@media (max-width: 575.98px) {
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+    
+    .modal-content {
+        border-radius: 0;
+    }
+}
+
+/* Grid System Adjustments */
+@media (max-width: 767.98px) {
+    .row {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    
+    .col, [class*="col-"] {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+/* Typography Adjustments */
+@media (max-width: 767.98px) {
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    h4 { font-size: 1.1rem; }
+    h5 { font-size: 1rem; }
+    h6 { font-size: 0.9rem; }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Spacing Adjustments */
+@media (max-width: 767.98px) {
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .my-5 {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .pt-5 {
+        padding-top: 2rem !important;
+    }
+    
+    .pb-5 {
+        padding-bottom: 2rem !important;
+    }
+}
+
+/* Utility Classes for Mobile */
+.mobile-only {
+    display: none !important;
+}
+
+.desktop-only {
+    display: block !important;
+}
+
+@media (max-width: 767.98px) {
+    .mobile-only {
+        display: block !important;
+    }
+    
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+/* Touch-friendly Elements */
+@media (hover: none) and (pointer: coarse) {
+    .btn, .nav-link, .dropdown-item {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .form-control, .form-select {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+    .btn-primary {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

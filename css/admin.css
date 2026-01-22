@@ -1,0 +1,364 @@
+/* Admin Panel Styles */
+
+/* Admin Sidebar */
+.admin-sidebar {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+    color: white;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.admin-sidebar .sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.admin-sidebar .sidebar-header h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.admin-sidebar .nav-link {
+    color: rgba(255,255,255,0.8);
+    padding: 12px 20px;
+    border-left: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    border-left-color: #3498db;
+}
+
+.admin-sidebar .nav-link i {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Admin Content */
+.admin-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    .admin-sidebar {
+        margin-left: -250px;
+    }
+    
+    .admin-sidebar.active {
+        margin-left: 0;
+    }
+    
+    .admin-content {
+        margin-left: 0;
+    }
+}
+
+/* Admin Navbar */
+.admin-navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Admin Cards */
+.admin-stats-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.admin-stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-stats-card .card-body {
+    padding: 20px;
+}
+
+.admin-stats-card .stats-icon {
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+.admin-stats-card .stats-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.admin-stats-card .stats-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Admin Tables */
+.admin-table {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.admin-table .table {
+    margin-bottom: 0;
+}
+
+.admin-table th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.admin-table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.admin-table tr:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+/* Admin Form Styles */
+.admin-form .form-label {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.admin-form .form-control,
+.admin-form .form-select {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.admin-form .form-control:focus,
+.admin-form .form-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Admin Action Buttons */
+.btn-admin-action {
+    padding: 5px 10px;
+    font-size: 0.875rem;
+    border-radius: 3px;
+    margin: 0 2px;
+}
+
+.btn-admin-view {
+    background-color: #3498db;
+    color: white;
+    border: none;
+}
+
+.btn-admin-edit {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+}
+
+.btn-admin-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+}
+
+.btn-admin-approve {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+}
+
+.btn-admin-reject {
+    background-color: #95a5a6;
+    color: white;
+    border: none;
+}
+
+/* Admin Modals */
+.admin-modal .modal-content {
+    border-radius: 10px;
+    border: none;
+}
+
+.admin-modal .modal-header {
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.admin-modal .modal-title {
+    font-weight: 600;
+}
+
+/* Admin Charts */
+.admin-chart-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Admin Filters */
+.admin-filters {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.admin-filters .filter-group {
+    margin-bottom: 15px;
+}
+
+/* Admin Status Badges */
+.badge-admin-pending {
+    background-color: #f39c12;
+    color: white;
+}
+
+.badge-admin-approved {
+    background-color: #27ae60;
+    color: white;
+}
+
+.badge-admin-rejected {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.badge-admin-active {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.badge-admin-inactive {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.badge-admin-verified {
+    background-color: #3498db;
+    color: white;
+}
+
+.badge-admin-unverified {
+    background-color: #f1c40f;
+    color: white;
+}
+
+/* Admin Pagination */
+.admin-pagination .page-link {
+    color: #3498db;
+    border: 1px solid #dee2e6;
+}
+
+.admin-pagination .page-item.active .page-link {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: white;
+}
+
+/* Admin Alerts */
+.admin-alert {
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+}
+
+.admin-alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.admin-alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.admin-alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.admin-alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Admin Loading */
+.admin-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.admin-loading .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Admin Responsive */
+@media (max-width: 768px) {
+    .admin-stats-card {
+        margin-bottom: 20px;
+    }
+    
+    .admin-table {
+        font-size: 0.875rem;
+    }
+    
+    .btn-admin-action {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .admin-filters .col-md-3 {
+        margin-bottom: 10px;
+    }
+}
+
+/* Admin Print Styles */
+@media print {
+    .admin-sidebar,
+    .admin-navbar,
+    .no-print {
+        display: none !important;
+    }
+    
+    .admin-content {
+        margin-left: 0;
+        padding: 0;
+    }
+    
+    .admin-table {
+        box-shadow: none;
+    }
+}
